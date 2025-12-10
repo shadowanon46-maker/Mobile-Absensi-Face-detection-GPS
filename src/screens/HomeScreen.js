@@ -95,8 +95,8 @@ export default function HomeScreen({ navigation }) {
                 <RefreshControl
                     refreshing={refreshing}
                     onRefresh={onRefresh}
-                    tintColor="#3B82F6"
-                    colors={['#3B82F6']}
+                    tintColor="#00D9FF"
+                    colors={['#00D9FF']}
                 />
             }
         >
@@ -220,7 +220,7 @@ export default function HomeScreen({ navigation }) {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#0F172A',
+        backgroundColor: '#041C32',
     },
     contentContainer: {
         padding: 16,
@@ -230,7 +230,7 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#0F172A',
+        backgroundColor: '#041C32',
     },
     loadingText: {
         marginTop: 12,
@@ -251,7 +251,9 @@ const styles = StyleSheet.create({
         width: 48,
         height: 48,
         borderRadius: 24,
-        backgroundColor: '#3B82F6',
+        backgroundColor: '#04293A',
+        borderWidth: 2,
+        borderColor: '#00D9FF',
         justifyContent: 'center',
         alignItems: 'center',
     },
@@ -275,18 +277,18 @@ const styles = StyleSheet.create({
     logoutButton: {
         paddingHorizontal: 16,
         paddingVertical: 8,
-        backgroundColor: '#1E293B',
+        backgroundColor: 'rgba(4, 41, 58, 0.8)',
         borderRadius: 8,
-    },
-    logoutText: {
-        color: '#EF4444',
-        fontWeight: '600',
+        borderWidth: 1,
+        borderColor: 'rgba(239, 68, 68, 0.5)',
     },
     statusCard: {
-        backgroundColor: '#1E293B',
+        backgroundColor: 'rgba(4, 41, 58, 0.8)',
         borderRadius: 16,
         padding: 20,
         marginBottom: 16,
+        borderWidth: 1,
+        borderColor: 'rgba(0, 217, 255, 0.3)',
     },
     statusHeader: {
         flexDirection: 'row',
@@ -331,7 +333,7 @@ const styles = StyleSheet.create({
     timeDivider: {
         width: 1,
         height: 40,
-        backgroundColor: '#334155',
+        backgroundColor: 'rgba(0, 217, 255, 0.3)',
     },
     shiftInfo: {
         marginTop: 16,
@@ -349,7 +351,7 @@ const styles = StyleSheet.create({
     shiftTime: {
         fontSize: 14,
         fontWeight: '600',
-        color: '#3B82F6',
+        color: '#00D9FF',
     },
     actionContainer: {
         marginBottom: 16,
@@ -360,10 +362,10 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     clockInButton: {
-        backgroundColor: '#22C55E',
+        backgroundColor: '#00D9FF',
     },
     clockOutButton: {
-        backgroundColor: '#F59E0B',
+        backgroundColor: '#00A8CC',
     },
     actionIcon: {
         fontSize: 40,
@@ -380,12 +382,12 @@ const styles = StyleSheet.create({
         color: 'rgba(255, 255, 255, 0.8)',
     },
     completedCard: {
-        backgroundColor: '#1E293B',
+        backgroundColor: 'rgba(4, 41, 58, 0.8)',
         borderRadius: 16,
         padding: 24,
         alignItems: 'center',
         borderWidth: 1,
-        borderColor: '#22C55E',
+        borderColor: '#00D9FF',
     },
     completedIcon: {
         fontSize: 40,
@@ -394,7 +396,7 @@ const styles = StyleSheet.create({
     completedTitle: {
         fontSize: 18,
         fontWeight: '700',
-        color: '#22C55E',
+        color: '#00D9FF',
         marginBottom: 4,
     },
     completedSubtext: {
@@ -402,9 +404,11 @@ const styles = StyleSheet.create({
         color: '#94A3B8',
     },
     statsCard: {
-        backgroundColor: '#1E293B',
+        backgroundColor: 'rgba(4, 41, 58, 0.8)',
         borderRadius: 16,
         padding: 20,
+        borderWidth: 1,
+        borderColor: 'rgba(0, 217, 255, 0.3)',
     },
     statsTitle: {
         fontSize: 16,
@@ -422,7 +426,7 @@ const styles = StyleSheet.create({
     statValue: {
         fontSize: 28,
         fontWeight: '700',
-        color: '#22C55E',
+        color: '#00D9FF',
     },
     statLabel: {
         fontSize: 12,

@@ -186,7 +186,7 @@ export default function AttendanceScreen({ route, navigation }) {
         return (
             <View style={styles.container}>
                 <View style={styles.centerContent}>
-                    <ActivityIndicator size="large" color="#3B82F6" />
+                    <ActivityIndicator size="large" color="#00D9FF" />
                     <Text style={styles.title}>Mendapatkan Lokasi...</Text>
                     <Text style={styles.subtitle}>
                         Pastikan GPS aktif untuk absensi
@@ -201,7 +201,7 @@ export default function AttendanceScreen({ route, navigation }) {
         return (
             <View style={styles.container}>
                 <View style={styles.centerContent}>
-                    <ActivityIndicator size="large" color="#3B82F6" />
+                    <ActivityIndicator size="large" color="#00D9FF" />
                     <Text style={styles.title}>Memproses Absensi...</Text>
                     <Text style={styles.subtitle}>
                         Mohon tunggu, sedang verifikasi wajah dan lokasi
@@ -217,7 +217,7 @@ export default function AttendanceScreen({ route, navigation }) {
             <View style={styles.container}>
                 <View style={styles.centerContent}>
                     <Text style={styles.icon}>{result?.success ? '✅' : '❌'}</Text>
-                    <Text style={[styles.title, { color: result?.success ? '#22C55E' : '#EF4444' }]}>
+                    <Text style={[styles.title, { color: result?.success ? '#00D9FF' : '#EF4444' }]}>
                         {result?.success ? 'Berhasil!' : 'Gagal'}
                     </Text>
                     <Text style={styles.subtitle}>{result?.message}</Text>
@@ -318,7 +318,7 @@ export default function AttendanceScreen({ route, navigation }) {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#0F172A',
+        backgroundColor: '#041C32',
     },
     centerContent: {
         flex: 1,
@@ -345,7 +345,7 @@ const styles = StyleSheet.create({
         lineHeight: 24,
     },
     button: {
-        backgroundColor: '#3B82F6',
+        backgroundColor: '#00D9FF',
         paddingHorizontal: 32,
         paddingVertical: 16,
         borderRadius: 12,
@@ -354,7 +354,7 @@ const styles = StyleSheet.create({
         marginBottom: 12,
     },
     buttonText: {
-        color: '#FFFFFF',
+        color: '#041C32',
         fontSize: 16,
         fontWeight: '600',
     },
@@ -376,13 +376,13 @@ const styles = StyleSheet.create({
         paddingHorizontal: 16,
         paddingTop: Platform.OS === 'ios' ? 60 : 40,
         paddingBottom: 16,
-        backgroundColor: '#0F172A',
+        backgroundColor: '#041C32',
     },
     backButton: {
         width: 80,
     },
     backButtonText: {
-        color: '#3B82F6',
+        color: '#00D9FF',
         fontSize: 16,
     },
     headerTitle: {
@@ -414,7 +414,7 @@ const styles = StyleSheet.create({
         width: 220,
         height: 280,
         borderWidth: 3,
-        borderColor: '#3B82F6',
+        borderColor: '#00D9FF',
         borderRadius: 140,
         backgroundColor: 'transparent',
     },
@@ -433,10 +433,12 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         paddingVertical: 12,
-        backgroundColor: '#1E293B',
+        backgroundColor: 'rgba(4, 41, 58, 0.8)',
         marginHorizontal: 16,
         marginTop: 12,
         borderRadius: 12,
+        borderWidth: 1,
+        borderColor: 'rgba(0, 217, 255, 0.3)',
     },
     locationIcon: {
         fontSize: 16,
@@ -463,13 +465,13 @@ const styles = StyleSheet.create({
         elevation: 8,
     },
     captureButtonGreen: {
-        backgroundColor: '#22C55E',
+        backgroundColor: '#00D9FF',
     },
     captureButtonOrange: {
-        backgroundColor: '#F59E0B',
+        backgroundColor: '#00A8CC',
     },
     captureButtonDisabled: {
-        backgroundColor: '#475569',
+        backgroundColor: '#04293A',
     },
     captureIcon: {
         fontSize: 32,
@@ -481,13 +483,15 @@ const styles = StyleSheet.create({
         fontWeight: '700',
     },
     infoCard: {
-        backgroundColor: '#1E293B',
+        backgroundColor: 'rgba(4, 41, 58, 0.8)',
         paddingHorizontal: 20,
         paddingVertical: 12,
         borderRadius: 12,
         flexDirection: 'row',
         alignItems: 'center',
         marginBottom: 16,
+        borderWidth: 1,
+        borderColor: 'rgba(0, 217, 255, 0.3)',
     },
     infoLabel: {
         color: '#94A3B8',
@@ -500,14 +504,14 @@ const styles = StyleSheet.create({
         fontWeight: '600',
     },
     verifiedBadge: {
-        backgroundColor: 'rgba(34, 197, 94, 0.2)',
+        backgroundColor: 'rgba(0, 217, 255, 0.2)',
         paddingHorizontal: 16,
         paddingVertical: 8,
         borderRadius: 20,
         marginBottom: 24,
     },
     verifiedText: {
-        color: '#22C55E',
+        color: '#00D9FF',
         fontSize: 14,
         fontWeight: '600',
     },
