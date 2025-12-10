@@ -220,7 +220,7 @@ export default function HomeScreen({ navigation }) {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#041C32',
+        backgroundColor: '#0A4D68',
     },
     contentContainer: {
         padding: 16,
@@ -230,7 +230,7 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#041C32',
+        backgroundColor: '#0A4D68',
     },
     loadingText: {
         marginTop: 12,
@@ -251,9 +251,9 @@ const styles = StyleSheet.create({
         width: 48,
         height: 48,
         borderRadius: 24,
-        backgroundColor: '#04293A',
+        backgroundColor: 'rgba(255, 255, 255, 0.2)',
         borderWidth: 2,
-        borderColor: '#00D9FF',
+        borderColor: 'rgba(255, 255, 255, 0.4)',
         justifyContent: 'center',
         alignItems: 'center',
     },
@@ -277,18 +277,22 @@ const styles = StyleSheet.create({
     logoutButton: {
         paddingHorizontal: 16,
         paddingVertical: 8,
-        backgroundColor: 'rgba(4, 41, 58, 0.8)',
+        backgroundColor: 'rgba(255, 255, 255, 0.15)',
         borderRadius: 8,
         borderWidth: 1,
-        borderColor: 'rgba(239, 68, 68, 0.5)',
+        borderColor: 'rgba(255, 255, 255, 0.3)',
+    },
+    logoutText: {
+        color: '#FFFFFF',
+        fontWeight: '600',
     },
     statusCard: {
-        backgroundColor: 'rgba(4, 41, 58, 0.8)',
+        backgroundColor: 'rgba(8, 131, 149, 0.3)',
         borderRadius: 16,
         padding: 20,
         marginBottom: 16,
         borderWidth: 1,
-        borderColor: 'rgba(0, 217, 255, 0.3)',
+        borderColor: 'rgba(255, 255, 255, 0.2)',
     },
     statusHeader: {
         flexDirection: 'row',
@@ -333,7 +337,7 @@ const styles = StyleSheet.create({
     timeDivider: {
         width: 1,
         height: 40,
-        backgroundColor: 'rgba(0, 217, 255, 0.3)',
+        backgroundColor: 'rgba(255, 255, 255, 0.2)',
     },
     shiftInfo: {
         marginTop: 16,
@@ -351,7 +355,7 @@ const styles = StyleSheet.create({
     shiftTime: {
         fontSize: 14,
         fontWeight: '600',
-        color: '#00D9FF',
+        color: '#FFFFFF',
     },
     actionContainer: {
         marginBottom: 16,
@@ -362,10 +366,10 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     clockInButton: {
-        backgroundColor: '#00D9FF',
+        backgroundColor: '#FFFFFF',
     },
     clockOutButton: {
-        backgroundColor: '#00A8CC',
+        backgroundColor: 'rgba(255, 255, 255, 0.85)',
     },
     actionIcon: {
         fontSize: 40,
@@ -374,20 +378,20 @@ const styles = StyleSheet.create({
     actionButtonText: {
         fontSize: 24,
         fontWeight: '700',
-        color: '#FFFFFF',
+        color: '#0A4D68',
         marginBottom: 4,
     },
     actionSubtext: {
         fontSize: 14,
-        color: 'rgba(255, 255, 255, 0.8)',
+        color: 'rgba(10, 77, 104, 0.8)',
     },
     completedCard: {
-        backgroundColor: 'rgba(4, 41, 58, 0.8)',
+        backgroundColor: 'rgba(8, 131, 149, 0.3)',
         borderRadius: 16,
         padding: 24,
         alignItems: 'center',
         borderWidth: 1,
-        borderColor: '#00D9FF',
+        borderColor: 'rgba(255, 255, 255, 0.3)',
     },
     completedIcon: {
         fontSize: 40,
@@ -396,19 +400,19 @@ const styles = StyleSheet.create({
     completedTitle: {
         fontSize: 18,
         fontWeight: '700',
-        color: '#00D9FF',
+        color: '#FFFFFF',
         marginBottom: 4,
     },
     completedSubtext: {
         fontSize: 14,
-        color: '#94A3B8',
+        color: 'rgba(255, 255, 255, 0.7)',
     },
     statsCard: {
-        backgroundColor: 'rgba(4, 41, 58, 0.8)',
+        backgroundColor: 'rgba(8, 131, 149, 0.3)',
         borderRadius: 16,
         padding: 20,
         borderWidth: 1,
-        borderColor: 'rgba(0, 217, 255, 0.3)',
+        borderColor: 'rgba(255, 255, 255, 0.2)',
     },
     statsTitle: {
         fontSize: 16,
@@ -426,11 +430,11 @@ const styles = StyleSheet.create({
     statValue: {
         fontSize: 28,
         fontWeight: '700',
-        color: '#00D9FF',
+        color: '#FFFFFF',
     },
     statLabel: {
         fontSize: 12,
-        color: '#94A3B8',
+        color: 'rgba(255, 255, 255, 0.7)',
         marginTop: 4,
     },
 });

@@ -186,7 +186,7 @@ export default function AttendanceScreen({ route, navigation }) {
         return (
             <View style={styles.container}>
                 <View style={styles.centerContent}>
-                    <ActivityIndicator size="large" color="#00D9FF" />
+                    <ActivityIndicator size="large" color="#FFFFFF" />
                     <Text style={styles.title}>Mendapatkan Lokasi...</Text>
                     <Text style={styles.subtitle}>
                         Pastikan GPS aktif untuk absensi
@@ -201,7 +201,7 @@ export default function AttendanceScreen({ route, navigation }) {
         return (
             <View style={styles.container}>
                 <View style={styles.centerContent}>
-                    <ActivityIndicator size="large" color="#00D9FF" />
+                    <ActivityIndicator size="large" color="#FFFFFF" />
                     <Text style={styles.title}>Memproses Absensi...</Text>
                     <Text style={styles.subtitle}>
                         Mohon tunggu, sedang verifikasi wajah dan lokasi
@@ -217,7 +217,7 @@ export default function AttendanceScreen({ route, navigation }) {
             <View style={styles.container}>
                 <View style={styles.centerContent}>
                     <Text style={styles.icon}>{result?.success ? '✅' : '❌'}</Text>
-                    <Text style={[styles.title, { color: result?.success ? '#00D9FF' : '#EF4444' }]}>
+                    <Text style={[styles.title, { color: result?.success ? '#FFFFFF' : '#FF6B6B' }]}>
                         {result?.success ? 'Berhasil!' : 'Gagal'}
                     </Text>
                     <Text style={styles.subtitle}>{result?.message}</Text>
@@ -318,7 +318,7 @@ export default function AttendanceScreen({ route, navigation }) {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#041C32',
+        backgroundColor: '#0A4D68',
     },
     centerContent: {
         flex: 1,
@@ -345,7 +345,7 @@ const styles = StyleSheet.create({
         lineHeight: 24,
     },
     button: {
-        backgroundColor: '#00D9FF',
+        backgroundColor: '#FFFFFF',
         paddingHorizontal: 32,
         paddingVertical: 16,
         borderRadius: 12,
@@ -354,7 +354,7 @@ const styles = StyleSheet.create({
         marginBottom: 12,
     },
     buttonText: {
-        color: '#041C32',
+        color: '#0A4D68',
         fontSize: 16,
         fontWeight: '600',
     },
@@ -376,13 +376,13 @@ const styles = StyleSheet.create({
         paddingHorizontal: 16,
         paddingTop: Platform.OS === 'ios' ? 60 : 40,
         paddingBottom: 16,
-        backgroundColor: '#041C32',
+        backgroundColor: '#0A4D68',
     },
     backButton: {
         width: 80,
     },
     backButtonText: {
-        color: '#00D9FF',
+        color: '#FFFFFF',
         fontSize: 16,
     },
     headerTitle: {
@@ -414,7 +414,7 @@ const styles = StyleSheet.create({
         width: 220,
         height: 280,
         borderWidth: 3,
-        borderColor: '#00D9FF',
+        borderColor: 'rgba(255, 255, 255, 0.6)',
         borderRadius: 140,
         backgroundColor: 'transparent',
     },
@@ -433,12 +433,12 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         paddingVertical: 12,
-        backgroundColor: 'rgba(4, 41, 58, 0.8)',
+        backgroundColor: 'rgba(8, 131, 149, 0.3)',
         marginHorizontal: 16,
         marginTop: 12,
         borderRadius: 12,
         borderWidth: 1,
-        borderColor: 'rgba(0, 217, 255, 0.3)',
+        borderColor: 'rgba(255, 255, 255, 0.2)',
     },
     locationIcon: {
         fontSize: 16,
@@ -465,25 +465,25 @@ const styles = StyleSheet.create({
         elevation: 8,
     },
     captureButtonGreen: {
-        backgroundColor: '#00D9FF',
+        backgroundColor: '#FFFFFF',
     },
     captureButtonOrange: {
-        backgroundColor: '#00A8CC',
+        backgroundColor: 'rgba(255, 255, 255, 0.85)',
     },
     captureButtonDisabled: {
-        backgroundColor: '#04293A',
+        backgroundColor: 'rgba(255, 255, 255, 0.3)',
     },
     captureIcon: {
         fontSize: 32,
         marginBottom: 4,
     },
     captureText: {
-        color: '#FFFFFF',
+        color: '#0A4D68',
         fontSize: 14,
         fontWeight: '700',
     },
     infoCard: {
-        backgroundColor: 'rgba(4, 41, 58, 0.8)',
+        backgroundColor: 'rgba(8, 131, 149, 0.3)',
         paddingHorizontal: 20,
         paddingVertical: 12,
         borderRadius: 12,
@@ -491,7 +491,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         marginBottom: 16,
         borderWidth: 1,
-        borderColor: 'rgba(0, 217, 255, 0.3)',
+        borderColor: 'rgba(255, 255, 255, 0.2)',
     },
     infoLabel: {
         color: '#94A3B8',
@@ -504,14 +504,14 @@ const styles = StyleSheet.create({
         fontWeight: '600',
     },
     verifiedBadge: {
-        backgroundColor: 'rgba(0, 217, 255, 0.2)',
+        backgroundColor: 'rgba(255, 255, 255, 0.2)',
         paddingHorizontal: 16,
         paddingVertical: 8,
         borderRadius: 20,
         marginBottom: 24,
     },
     verifiedText: {
-        color: '#00D9FF',
+        color: '#FFFFFF',
         fontSize: 14,
         fontWeight: '600',
     },

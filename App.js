@@ -89,7 +89,7 @@ function AppNavigator() {
     <Stack.Navigator
       screenOptions={{
         headerShown: false,
-        contentStyle: { backgroundColor: '#041C32' },
+        contentStyle: { backgroundColor: '#0A4D68' },
         animation: 'slide_from_right',
       }}
     >
@@ -150,11 +150,11 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#041C32',
+    backgroundColor: '#0A4D68',
   },
   splashContainer: {
     flex: 1,
-    backgroundColor: '#041C32',
+    backgroundColor: '#0A4D68',
     justifyContent: 'center',
     alignItems: 'center',
   },
