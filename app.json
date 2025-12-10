@@ -24,6 +24,22 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-secure-store",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Izinkan akses kamera untuk verifikasi wajah saat absensi"
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Izinkan akses lokasi untuk verifikasi kehadiran di area kantor",
+          "locationWhenInUsePermission": "Izinkan akses lokasi untuk verifikasi kehadiran di area kantor"
+        }
+      ]
+    ]
   }
 }
